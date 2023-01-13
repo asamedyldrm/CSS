@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:out-of-range{
+            border: 1px solid red;
+        }
+
+        input:read-only{
+            background-color: bisque;
+        }
+
+        input:read-write{
+            background-color: aqua;
+        }
+        /* Tüm html elementlerini seçer */
+        :root{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" min="5" max="15" value="20">
+    <p>Samet YILDIRIM</p>
+
+    <input type="text" readonly value="Samet YILDIRIM"><br>
+    <input type="text" value="Samet">
+</body>
+</html>
