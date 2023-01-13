@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+    *{
+        box-sizing: border-box;
+    }
+    .box{
+        float: left;
+        width: 33.33%;
+        border: 1px solid red;
+        padding: 50px;
+        text-align: center;
+
+    }
+
+    .samet{
+        margin-bottom: 10px;
+    }
+
+    .samet::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    </style>
+</head>
+<body>
+    <h2>Eşit Kutular</h2>
+    <div class="samet">
+        <div class="box" style="background-color: silver;">
+            <p>Yazı</p>
+        </div>
+        <div class="box" style="background-color: silver;">
+            <p>Yazı</p>
+        </div>
+        <div class="box" style="background-color: silver;">
+            <p>Yazı</p>
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique dignissimos quas maiores a aperiam iure facilis suscipit, blanditiis itaque fugit in at autem dolor nemo facere. Eaque temporibus molestiae corporis quasi consectetur dicta itaque est voluptatibus magnam at rem ipsam pariatur officiis ducimus natus voluptas velit fuga, error beatae quam, omnis corrupti? Maxime aut nesciunt minus, temporibus totam sunt repellendus expedita sequi quaerat corrupti repudiandae est libero sint praesentium deleniti autem pariatur voluptates dolorum aperiam laborum provident laboriosam recusandae! Quos, vero! Sit expedita fuga non asperiores tenetur eaque mollitia? Laboriosam vel nam tenetur nemo inventore eos accusantium animi delectus voluptatibus!</p>
+</body>
+</html>
