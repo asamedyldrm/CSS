@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div1{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            float: right;
+            margin: 10px;
+        }
+
+        .div2{
+            border: 1px solid blue;
+            clear: right; /*sınırını ihlal etmesini engelliyor. float:left olmasına izin vermiyor.*/
+        }
+    </style>
+</head>
+<body>
+    <h2>Clear Kullanılmadan</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+</body>
+</html>
