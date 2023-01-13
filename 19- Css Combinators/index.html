@@ -8,7 +8,17 @@
 
     <style>
         /*sadece hemen altındaki p'ye değer vermek için - child selector*/
-        div > p{
+        /* div > p{
+            background-color: yellowgreen;
+        } */
+
+        /*sadece hemen sonraki p'ye değer verir*/
+        /* div + p{
+            background-color: yellowgreen;
+        } */
+        
+        /* div ile aynı seviyede olan*/
+        div ~ p{
             background-color: yellowgreen;
         }
     </style>
@@ -19,8 +29,9 @@
         <p>Paragraf2</p>
         <section><p>Paragraf3</p></section>
     </div>
-
+    
     <p>Paragraf4</p>
     <p>Paragraf5</p>
+    
 </body>
 </html>
