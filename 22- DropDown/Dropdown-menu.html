@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .Dropdown{
+            position: relative;
+            float: right;
+        }
+
+        .content{
+            position: absolute;
+            display: none;
+            background-color: rgb(48, 48, 48);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px;
+            right: 0;
+        }
+
+        .dropbtn{
+            background-color: green;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border: none;
+            /* border-radius: 35px; */
+            cursor: pointer;
+        }
+
+        .content a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;            
+        }
+
+        .content a:hover{
+            background-color: red;
+        }
+
+        .Dropdown:hover .content{
+            display: block;
+        }
+
+        .Dropdown:hover .mesela{
+            color: blue;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    
+    <h1 class="mesela">Dropdown Menu</h1>
+    <div class="Dropdown">
+        
+        <button class="dropbtn">Dropdown Menu</button>
+        <div class="content">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
