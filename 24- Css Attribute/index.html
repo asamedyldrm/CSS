@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a[target=_blank]{
+            background-color: aquamarine;
+        }
+
+        a[target~=linkedin]{
+            background-color: red;
+        }
+
+        [title~=web]{
+            background-color: aquamarine;
+        }
+
+        [title|=samet]{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://samettyldrm.github.io/" title="samet">Website</a>
+    <a href="https://www.linkedin.com/in/samettyldrm" target="_blank linkedin">Linkedin</a>
+    <a href="https://github.com/samettyldrm" target="_top">Github</a>
+</body>
+</html>
+
+<!-- 
+    target=samet target'ı bu olana eşit
+    target~=samet target'ın içinde varsa
+    title~=samet title bu kelime ile başlıyorsa.
+    title|=samet title samet'e eşitse.
+    title^=samet title'ın başlangıcından itibaren samet ifadesi geçiyorsa.
+    title$=samet title'n sonundan itibaren samet ifadesi olan.
+
+ -->
