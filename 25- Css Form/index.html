@@ -5,11 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Form</title>
+    <style>
+        input[type=text]{
+            width: 150px;
+            padding: 12px 15px;
+            margin: 8px 0;
+            border: 3px solid red;
+            box-sizing: border-box;
+            border-radius: 30px;
+            /* background-color: black; */
+            color: rgb(54, 234, 54);
+        }
+
+        input[type=text]:focus{
+            background-color: black;
+            width: 300px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 16rem;
+            border: 1px solid rgb(227, 102, 19);
+            font-size: 20px;
+            resize: none;
+        }
+
+        select{
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 3rem;
+            border: 1px solid orangered;
+            background-color: antiquewhite;
+        }
+
+        input[type=button],
+        input[type=reset],
+        input[type=submit]{
+
+            padding: 16px 20px;
+            background-color: rgb(26, 26, 26);
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 1rem;
+        }
+
+        input[type=button]:hover,
+        input[type=reset]:hover,
+        input[type=submit]:hover{
+
+            background-color: rgb(58, 19, 234);
+
+        }
+
+    </style>
 </head>
 <body>
     
     <form>
-        <label for=""></label>
+        <label for="samet">Adınızı Giriniz:</label>
+        <input type="text" name="samet" placeholder="Adınız">
+
+        <label for="yildirim">Soyadınızı Giriniz:</label>
+        <input type="text" name="yildirim" placeholder="Soyadınız">
+
+        <textarea>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam provident qui, ab illum neque, minus officia, aspernatur culpa fuga ducimus autem obcaecati! Voluptatem optio, a veritatis iste quod natus dignissimos perspiciatis voluptas eaque facilis. Adipisci culpa recusandae at deleniti, sint eius officiis ab ipsam ratione ducimus esse obcaecati dolores harum facilis corporis tempora, assumenda quisquam in molestias provident nisi incidunt numquam sunt. Asperiores non, dolore quos dolorum modi eius unde, porro nobis, dolor incidunt in facere veniam sapiente vero dolores nemo recusandae ipsum? Natus at aut suscipit fugiat nemo, molestias aperiam deserunt, aliquam nostrum tempora magni necessitatibus, error omnis non? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur inventore possimus earum corrupti nihil dignissimos error quidem minus dolore esse. Libero, cum inventore porro aut culpa voluptates soluta aperiam enim atque blanditiis, autem dolore? Dolorem corporis sit laudantium illum possimus ab nobis vero quo. Distinctio natus expedita maiores quod magni eveniet! Cum voluptatum eos labore quos rerum veniam doloremque cupiditate a nobis dolorum corrupti quam sed, possimus maxime soluta nulla, voluptas est nam vitae ducimus rem provident facere dolores! Expedita aliquam excepturi, error maiores eos facilis molestiae soluta. Aperiam aliquid doloremque earum consectetur natus mollitia consequuntur molestiae fuga? Cupiditate, ut. Mesajınızı buraya yazınız.</textarea>
+
+        <select name="ulke">
+            <option value="tr">Türkiye</option>
+            <option value="fr">Français</option>
+            <option value="en">England</option>
+        </select>
+
+        <input type="button" value="Button">
+        <input type="reset" value="Button">
+        <input type="submit" value="Button">
 
     </form>
 </body>
