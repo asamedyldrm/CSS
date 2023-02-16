@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counters</title>
+
+    <style>
+        body{
+            counter-reset: section;
+        }
+
+        h2::before{
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Samet</h1>
+    <h2>Samet</h2>
+    <h2>YILDIRIM</h2>
+    <h2>Doktor Logo - Samet YILDIRIM</h2>
+</body>
+</html>

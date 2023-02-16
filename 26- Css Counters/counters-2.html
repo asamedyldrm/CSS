@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            counter-reset: body-reset;
+        }
+
+        h1{
+            counter-reset: h1-reset;
+        }
+
+        h1::before{
+            counter-increment: body-reset;
+            content: "Seçenek " counter(body-reset) " : ";
+        }
+
+        h2::before{
+            counter-increment: h1-reset;
+            content: counter(body-reset) "." counter(h1-reset) " ";      
+        }
+    </style>
+</head>
+<body>
+    <h1>Doktor Logo - Logo Tasarım</h1>
+    <h2>Logo Tasarım</h2>
+    <h2>Kurumsal Kimlik</h2>
+
+    <h1>Referanslar</h1>
+    <h2>Logo Referansları</h2>
+    <h2>Kurumsal Kimlik Referansları</h2>
+</body>
+</html>
