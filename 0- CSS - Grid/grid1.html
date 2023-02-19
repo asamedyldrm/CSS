@@ -6,10 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <style>
-        
+
         .grid-container{
             display: grid;
+            grid-template-columns: auto 150px auto;
+            /* grid-template-rows: 1fr 2fr 2fr; */
+            overflow:hidden;
+            /* grid-row-gap: 25px;
+            grid-column-gap: 25px; */
+            grid-gap: 10px;
+            background-color: rgb(54, 156, 246);
+            padding: 2rem;
+            height: 500px;
+            justify-content: center;
+            align-content: space-between;
         }
+
+        .grid-container > div{
+            background-color: aquamarine;
+            padding: 2rem;
+            font-size: 2rem;
+            text-align: center;
+            border: 1px solid orangered;
+        }
+
+        /* .grid-item2{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .grid-item4{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        } */
 
 
     </style>
